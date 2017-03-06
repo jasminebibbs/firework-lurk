@@ -1,0 +1,161 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\fswiss\fcharset238 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh19280\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural
+
+\f0\fs24 \cf0 https://dash.generalassemb.ly/Jay_Bee/build-your-own-business-website\
+\
+<!DOCTYPE html>\
+<head>\
+<script src="/assets/jquery.js"></script>\
+<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>\
+\
+<style>\
+\
+body \{\
+  font-family: helvetica, sans-serif;\
+  background: #232323;\
+  color: #fff;\
+  margin: 0 auto;\
+  max-width: 600px;\
+  \
+\}\
+\
+div \{\
+  background-size: cover;\
+  height: 200px;\
+  position: relative;\
+  border-radius: 12px;\
+  margin: 40px 0 0 0;\
+\}\
+\
+h1 \{\
+  font-family: 'Poiret One', cursive;\
+  font-size: 80px;\
+  text-align: center;\
+  letter-spacing: 7;\
+  margin-bottom: -10px;\
+\}\
+\
+h2 \{\
+  font-family: arial;\
+  font-weight: 100;\
+  text-transform: uppercase;\
+  font-size: 18px;\
+  letter-spacing: 9;\
+  text-align: center;\
+  color: #aaa;\
+  \
+\}\
+\
+p \{ \
+color: rgba(255,255,255,1);\
+  background: black;\
+  background: linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));\
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));\
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));\
+  padding: 10px;\
+  line-height: 28px;\
+  text-align: justify;\
+  position: absolute;\
+  bottom: 0;\
+  margin: 0;\
+  height: 30px;\
+  transition: height .5s;\
+  -webkit-transition: height .5s;\
+  -moz-transition: height .5s;\
+  \
+\}\
+\
+small \{\
+  opacity: 0;\
+\}\
+\
+\
+\
+.show-description p \{\
+  height: 150px; \
+\}\
+\
+.show-description small \{\
+  opacity: 1; \
+\}\
+\
+.first \{\
+  background-image: url("http://jeannineswestlakevillage.com/wp-content/uploads/J005_C017_04042R.0000000.jpg");\
+  \
+\}\
+\
+.second \{\
+  background-image: url("http://static1.squarespace.com/static/54bbaaade4b0ad6fb5ea65dc/t/5509c27ce4b0cb471a54e817/1426703010586/Barefoot+Gourmet+Food+3.jpg?format=1500w");\
+  \
+\}\
+\
+.dessert \{\
+  background-image: url("https://img.grouponcdn.com/iam/vRbmiFEPhYvVtAdd5AyZ/Vg-3000x2016/v1/c700x420.jpg");\
+  \
+\}\
+\
+.price \{\
+  float: right;\
+\}\
+\
+@media (max-width: 500px) \{\
+  h1 \{\
+    font-size: 50px;\
+    margin-top: 20px;\
+    line-height: 40px;\
+  \}\
+  h2 \{\
+    font-size: 20px;\
+    margin: 20px 0 30px 0;\
+  \}\
+  div \{\
+    margin: 20px 12px 0 12px;\
+  \}\
+  p \{\
+    font-size: 20px;\
+    line-height: 24px;\
+  \}\
+  small \{\
+    font-size: 16px;\
+  \}\
+\}\
+\
+</style>\
+\
+<body>\
+\
+<h1>The Patio</h1>\
+<h2>An Outdoor Eatery</h2>\
+\
+<div class="first">\
+<p>dish name <span class="price">$price</span></br>\
+<small>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate magna justo, a ultricies orci sagittis vel. Nulla suscipit mi libero, eget pellentesque ante bibendum tristique. Vivamus vel orci vulputate, venenatis lectus at, posuere nibh. Mauris et tortor malesuada, faucibus elit eu, bibendum mauris.</small>\
+</p>\
+</div>\
+\
+<div class="second">\
+<p>dish name <span class="price">$price</span></br>\
+<small>Ut orci nibh, iaculis nec sem eu, sodales mollis lorem. Maecenas a blandit eros. Integer ut diam vel leo fermentum sagittis eu non nunc. In metus dolor, hendrerit a lacinia sit amet, venenatis eu magna.</small>\
+</p>\
+</div>\
+\
+<div class="dessert">\
+<p>dish name <span class="price">$price</span></br>\
+<small>In hac habitasse platea dictumst. Ut tincidunt tortor ut lorem malesuada, at sagittis nibh imperdiet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</small>\
+</p>\
+</div>\
+\
+\
+\
+\
+<script>\
+  $('div').on('click', function() \{\
+    $(this).toggleClass('show-description'); \
+  \});\
+</script>\
+\
+</body>\
+}
