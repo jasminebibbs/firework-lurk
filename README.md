@@ -1,2 +1,2 @@
-# firework-lurk
-Hi, My name is Jasmine and I want to become a kick-butt, front-end, web developer.
+# code-portfolio
+Thanks for visiting my GitHub. Check out my code samples below.
