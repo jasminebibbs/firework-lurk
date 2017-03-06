@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    </head>
+    
+    
+    <style>
+        
+        html, body {
+            font-family: "Montserrat", sans-serif;
+        }
+
+        h1 {
+            border-left: 2px solid #00f28f;
+            font-size: 48px;
+            font-weight: 400;
+            padding-left: 20px;
+        }
+
+        .main {
+            margin-top: 80px;
+        }
+
+        form input {
+            background: #f0f0f0;
+            border: none;
+            border-left: 2px solid ##fff;
+            font-size: 36px;
+            padding: 20px;
+            width: 100%;
+        }
+
+        form input:focus {
+            background: #fff;
+            border-left: 2px solid #000;
+            box-shadow: none;
+            outline: none;
+            -webkit-transition: background 2s, border-left 2s;
+            transition: background 2s, border-left 2s;
+        }
+
+        button {
+            background: transparent;
+            border: none;
+            color: #00f28f;
+            cursor: pointer;
+            font-size: 36px;
+            padding: 20px 24px;
+            -webkit-transition: backgroun 2s, color 2s;
+            transition: backgroun 2s, color 2s;
+        }
+
+        button:hover {
+            background: #d7f4e8;
+            color: #fff;
+        }
+
+        .comments {
+            margin-top: 20px;
+            list-style: none;
+            padding-left: 0px;
+        }
+
+        li {
+            padding-left: 20px;
+            border-left: 2px solid #000;
+            font-size: 36px;
+            margin: 0 0 36px;
+        }
+    
+    </style>
+    
+    <body>
+        
+        <header class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-12 col-md-12">
+                        <h1>threadly</h1>
+                    
+                    </div>
+                
+                </div>
+            
+            </div>
+        </header>
+        
+        <div class="main">
+            <div class="container">
+                <div class="row">
+                    <form class="form">
+                        <div class="col-xs-8 col-md-8">
+                            <input id="comment" type="text" placeholder="share your thoughts">
+                        </div>
+                        <div class="col-xs-4 col-md-4">
+                            <button type="submit" class="button">post</button>
+                        
+                        </div>
+                        
+                    </form>
+                
+                </div>
+                
+                <ul class="comments" id="comments">
+                    <li>Have you felt it?</li>
+                    <li>There has been an awakening.</li>
+                    
+                </ul>
+            
+            </div>
+        
+        </div>
+        
+        <script src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+       
+        
+        <script>
+            var main = function () {
+    
+               $('form').submit(function(event){
+                   var $input = $(event.target).find('input');
+                   var comment = $input.val();
+
+                   if (comment !=="") {
+                       var html = $('<li>').text(comment);
+                       html.prependTo('#comments');
+                       $input.val("");
+                   }
+
+                   return false;
+               });
+
+            }
+
+            $(document).ready(main);
+        </script>
+        
+
+    </body>
+    
+</html>
