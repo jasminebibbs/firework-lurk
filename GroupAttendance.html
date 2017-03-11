@@ -1,0 +1,246 @@
+<head>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="width=device-width" name="viewport" />
+    <link href="https://cdn.shopify.com/s/files/1/0361/3657/files/font-awesome.min.css?8801472824095239102" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.shopify.com/s/files/1/0361/3657/files/ProximaWebfontKit.css?12117" type="text/css" charset="utf-8" />
+
+<style type="text/css">
+
+    /* Font Awesome Font Webkit */ 
+      
+    @font-face {
+
+        font-family: 'fontawesome';
+        src: url('https://cdn.shopify.com/s/files/1/0361/3657/files/fontawesome-webfont.eot?5547972964973228937');
+
+        src: local('fontawesome'),              url("https://cdn.shopify.com/s/files/1/0361/3657/files/fontawesome-webfont.woff?5547972964973228937") format("woff"),
+        url("https://cdn.shopify.com/s/files/1/0361/3657/files/FontAwesome.otf?5547972964973228937") format("opentype"),
+
+        url("https://cdn.shopify.com/s/files/1/0361/3657/files/fontawesome-webfont.svg?5547972964973228937") format("svg"),
+
+        url('https://cdn.shopify.com/s/files/1/0361/3657/files/fontawesome-webfont.ttf?5547972964973228937') format('truetype');
+
+        }  
+
+    /* Proxima Font Webkit */
+    
+    @font-face{ 
+        font-family: 'ProximaNovaRegular';
+        src: url('https://cdn.shopify.com/s/files/1/0361/3657/files/2C00E9_A_0.eot?8366792235930691595');
+
+        src: local('ProximaNovaRegular'),
+
+        url('https://cdn.shopify.com/s/files/1/0361/3657/files/2C00E9_A_0.woff?8366792235930691595') format('woff'),
+
+        url('https://cdn.shopify.com/s/files/1/0361/3657/files/2C00E9_A_0.svg?8366792235930691595') format('svg'),
+
+        url('https://cdn.shopify.com/s/files/1/0361/3657/files/2C00E9_A_0.ttf?8366792235930691595') format('truetype');
+    }
+
+    @font-face{ 
+        font-family: 'ProximaNovaBold';
+        src: url('https://cdn.shopify.com/s/files/1/0361/3657/files/2C00E9_B_0.eot?5547972964973228937');
+
+        src: local('ProximaNovaBold'),
+        url('https://cdn.shopify.com/s/files/1/0361/3657/files/2C00E9_B_0.woff?5547972964973228937') format('woff'),
+
+        url('https://cdn.shopify.com/s/files/1/0361/3657/files/2C00E9_B_0.svg?5547972964973228937') format('svg'),
+        url('https://cdn.shopify.com/s/files/1/0361/3657/files/2C00E9_B_0.ttf?5547972964973228937') format('truetype');
+    }
+
+    /* PAGE STYLES */
+    
+    
+    body {
+        margin: 0;
+        padding: 0; 
+    }
+
+    td, th, tr {
+/*        font-family: 'ProximaNovaRegular', sans-serif;*/
+        
+    }
+    
+    
+   
+    
+</style>
+
+</head>
+<body>
+    
+<div style="background:#0056b8">
+
+        <table style="table-layout:fixed;" width="100%" cellpadding="0" cellspacing="0">
+
+            <tbody>
+                <tr>
+                    <td align="center">
+
+                         <table cellpadding="0" cellspacing="0">
+
+                            <tbody>
+                                 <tr>
+                                    <td width="560" align="center">
+
+
+                                        <table cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding:14px" align="center" >
+
+                                                        <table width="100%" cellpadding="0" cellspacing="0">
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td style="text-align:center;padding:0" align="center">
+
+                                                                        <a href="https://crossroadschristian.org" style="text-decoration:none" target="_blank"><img src="https://cdn.shopify.com/s/files/1/0361/3657/files/CrossroadsIcon_Circle_white.png?14282667685044779486"  width="26px" height="26px" border="0"></a>
+
+
+                                                                    </td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                    </td>
+
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+
+      </div>
+    
+    
+ <!-- mid content -->
+
+     <table style="table-layout:fixed;background:#fff" width="100%" cellpadding="0" cellspacing="0">
+            <tbody>
+                <tr>
+                    <td style="padding:0 20px" align="center">
+
+                        <table cellpadding="0" cellspacing="0">
+                            <tbody>
+                                <tr>
+                                    <td style="padding:30px 0" width="520">
+
+                                        <table style="text-align:left" width="100%" cellpadding="0" cellspacing="0">
+                                            <tbody>
+                                                <tr>
+
+                                                    <td style="font-size:15px;line-height:2em;font-family:'ProximaNovaRegular','ProximaNovaBold',sans-serif;font-weight:normal;color:#000;padding:0 0 20px 0;">Hi {{ Person.NickName }},
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="font-size:15px;line-height:2em;font-family:'ProximaNovaRegular','ProximaNovaBold',sans-serif;font-weight:normal;color:#000;padding:0 0 20px 0;">Please remember to submit attendance for your group meeting {% if today == occurrenceDate %}today{% else %}on {{ Occurrence | Date:'dddd' }}{% endif %}. 
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                                <tr>
+                                                    <td style="font-size:15px;line-height:2em;font-family:'ProximaNovaRegular','ProximaNovaBold',sans-serif;font-weight:normal;color:#000;padding:0 0 25px 0;">
+                                                        
+                                                    <div><!--[if mso]>
+                                                          <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{ attendanceLink }}" style="height:40px;v-text-anchor:middle;width:160px;" arcsize="11%" strokecolor="#0056b8" fillcolor="#0056b8">
+                                                            <w:anchorlock/>
+                                                            <center style="color:#ffffff;font-family:sans-serif;font-size:15px;font-weight:normal;">Submit Attendance</center>
+                                                          </v:roundrect><![endif]-->
+                                                        <a href="{{ attendanceLink }}"
+                                                        style="background-color:#0056b8;border:0px solid #0056b8;border-radius:50px;color:#fff;display:inline-block;font-size:15px;line-height:2.8em;font-family:'ProximaNovaRegular','ProximaNovaBold',sans-serif;font-weight:normal;text-align:center;text-decoration:none;width:160px;height:40px;-webkit-text-size-adjust:none;mso-hide:all;">Submit Attendance</a>
+                                                        
+                                                        
+                                                        
+                                                    </div>
+                                                    
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                                <tr>
+                                                    <td style="font-size:15px;line-height:2em;font-family:'ProximaNovaRegular','ProximaNovaBold',sans-serif;font-weight:normal;color:#000;padding:0 0 30px 0;">Thank you!
+                                                    </td>
+                                                </tr>
+                                                
+                                                
+                                                
+
+
+                                            </tbody>
+                                        </table>
+
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>      
+   
+
+    
+<!-- footer content -->
+    
+ <table style="table-layout:fixed;background:#fff;margin-top:30px" width="100%" cellpadding="0" cellspacing="0">
+
+                    <tbody>
+                        <tr>
+                            <td style="padding:0 20px" align="center">
+
+                                <table cellpadding="0" cellspacing="0">
+
+                                    <tbody>
+                                        <tr>
+                                            <td style="padding:0" width="320">
+
+
+                                                <table style="text-align:center" width="100%" cellpadding="0" cellspacing="0">
+                                                    <tbody>
+
+                                                        <tr>
+                                                            <td style="font-size:12px;line-height:1.3em;font-family:'ProximaNovaRegular','ProximaNovaBold',sans-serif;font-weight:normal;color:#dedede;letter-spacing:0.03em;">
+                                                                <center>
+                                                                Crossroads Christian Church<br />
+                                                                6450 S State Hwy 360<br />
+                                                                Grand Prairie, TX 75052<br />
+                                                                817-557-2277<br />
+                                                                    <a href="http://crossroadschristian.org" style="text-decoration:none;color:#dedede">crossroadschristian.org
+                                                                    </a>
+                                                                </center>
+
+                                                                <center>
+                                                                {{ UnsubscribeOption }}
+                                                                </center>
+                                                            </td>
+                                                        </tr>
+
+
+                                                    </tbody>
+                                                </table>
+
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </td>
+                        </tr>
+                    </tbody>
+
+            </table>
+    
+</body>
